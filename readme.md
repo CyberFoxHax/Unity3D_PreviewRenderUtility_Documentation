@@ -38,3 +38,15 @@ preview.BeginPreview(rect, GUIStyle.none);
 Texture result = preview.EndPreview();
 preview.Cleanup();
 ```
+
+### Important Notes
+- Always call `Cleanup()` (especially in `OnDisable`).
+- One instance reused is better than creating many.
+- Works in Editor only (`UnityEditor` namespace).
+
+### Contributing
+Feel free to open **Issues** or **Pull Requests** to improve the documentation. Corrections, new examples, version-specific notes, etc. are very welcome.
+
+---
+
+**Made because Unity Technologies won't document it.**
